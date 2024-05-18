@@ -17,4 +17,13 @@ public class EbayHomePageSteps {
         EbayHomePageActionsObj.searchShoes();
 
     }
+    @Given("^Search for \"([^\"]*)\"$")
+    public void search_for(String items) throws Throwable {
+        EbayHomePageActionsObj.searchItems(items);
+    }
+
+    @Given("^Search for Shirt$")
+    public void search_for_Shirt() throws Throwable {
+
+    }
 }
